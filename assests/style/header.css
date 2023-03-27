@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: white;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.left__section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 220px;
+    padding-left: 40px;
+    margin-top: 50px;
+}
+.left__section img{
+    height: 90px;
+    /* width: 100%; */
+}
+
+.bx-menu,.bx-video-plus,.bx-bell,.bxs-microphone,.bx-search{
+    font-size: 2em;
+    cursor: pointer;   
+}
+
+.mid__section{
+    display: flex;
+   justify-content: space-between; 
+   align-items: center;
+   flex: 1;
+   max-width: 800px;
+}
+
+.search__bar{
+    height: 2.97rem;
+    flex: 1;
+	border-radius: 30px 0 0 30px;
+    border: 1px solid rgb(201, 200, 200);
+    font-size: 18px;
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.15);
+    width: 0;
+}
+
+.search__bar::placeholder{
+    padding: 20px; 
+}
+
+.search__icon{
+    padding-top: 11px;
+    padding-bottom:7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0 30px 30px 0;
+    border: 1px solid rgb(201, 200, 200);
+    background-color:rgb(246, 246, 246); 
+    cursor: pointer;  
+    transition:background-color 0.2s,opacity 0.2s; 
+    margin-right: 15px;
+    margin-left:-1px ;
+}
+
+.search__icon:hover{
+    background-color:rgb(221, 221, 221); 
+}
+
+.search__icon:active{
+   opacity: 0.6;
+}
+
+.micro__icon{
+    background-color:rgb(246, 246, 246); 
+   border-radius: 50px;
+   border: none;
+   padding: 12px;
+   cursor: pointer;
+}
+
+.micro__icon:hover{
+    background-color:rgb(221, 221, 221);
+
+}
+
+.right__section{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    width: 200px;
+    padding-right: 20px;
+    margin-left: 25px;
+}
+
+.right__section img{
+    width: 38px;
+    height: 38px;
+    border-radius: 18px;
+}
+
+.bell__notification{
+    position: relative;
+    cursor: pointer;
+}
+
+.notification{
+    position: absolute;
+    top: -2px;
+    right:-13px;
+    background-color: rgb(224, 2, 2);
+    color: white;
+    padding: 3px 7px;
+   border-radius: 35px;
+    font-weight: bold;
+    font-size: 13px;
+    
+}
