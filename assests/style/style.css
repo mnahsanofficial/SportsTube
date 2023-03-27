@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:white;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 70px;
+    padding-left: 320px;
+    padding-right: 20px;
+    padding-bottom: 50px; 
+}
+
+.video__container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding-top: 100px;
+}
+
+.video{
+    cursor: pointer;
+    display: grid;
+    row-gap: 10px;
+    transition: transform 0.5s, margin-bottom 0.2s;
+}
+
+.video img:hover{
+    transform: scale(1.2);
+    transition: all .5s ease-in-out;
+    margin-bottom: 30px;
+    z-index: 90;  
+}
+
+.video__thumbnil{
+    position: relative;
+}
+
+.video__thumbnil img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.duration{
+    background-color: #000;
+    color: white;
+    position: absolute;
+    right: 10px;
+    bottom: 25px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+
+.video__details{
+    display: grid;
+    grid-template-columns: 40px 1fr 10px;
+    column-gap: 10px;
+}
+
+.channel__name img{
+    width: 100%;
+    border-radius: 50px;
+}
+
+.video__info{
+    display: grid;
+    row-gap: 8px; 
+}
+
+.dot__dot p{
+    font-size: 22px;
+    transition:transform 0.2s ;   
+}
+
+.dot__dot p:hover{
+   transform: scale(1.2);
+}
+
+.video__info p:nth-child(1){
+    font-size:18px;  
+}
+
+.video__info p:nth-child(2),.video__info p:nth-child(3){
+    font-size: 12px;
+}
+
+.button_info{
+    position: fixed;
+    right: 0;
+    left: 320px;
+    background-color: white;
+    z-index: 80;
+   padding-top: 18px;
+}
+
+.button{ 
+    padding: 10px 10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right:12px ;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.button:hover{
+    background-color: rgb(228, 228, 228);
+    cursor: pointer;
+}
+.button:active{
+    background-color:black;
+    color: white;
+}
+
+.bx-chevron-right{
+    font-size: 30px;
+    vertical-align: middle;
+    margin-left: 18px;
+}
